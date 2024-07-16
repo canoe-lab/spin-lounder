@@ -15,7 +15,7 @@ const routes = [
     Component: HomePage
   },
   {
-    path: "/creator-token-mint",
+    path: "/spin-lounder/creator-token-mint",
     Component: CreatorTokenMintPage
   }
 ];
