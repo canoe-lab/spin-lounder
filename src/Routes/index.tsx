@@ -11,7 +11,7 @@ const CreatorTokenMintPage = lazy(() => import("../pages/CreatorTokenMintPage"))
 
 const routes = [
   {
-    path: "/spin-lounder",
+    path: "/spin-lounder/",
     Component: HomePage
   },
   {
