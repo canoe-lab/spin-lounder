@@ -1,2 +1,2 @@
-export const HOME = "/spin-lounder";
-export const CREATOR_TOKEN_MINT = "/spin-lounder/creator-token-mint";
+export const HOME = "/";
+export const CREATOR_TOKEN_MINT = "/creator-token-mint";
