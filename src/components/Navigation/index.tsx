@@ -5,13 +5,13 @@ const Navigation = () => {
     <nav>
       <ul>
         <li>
-          <Link to="/">HOME</Link>
+          <Link to="/spin-lounder/">HOME</Link>
         </li>
         <li>HOW IT WORKS</li>
         <li>DROPS</li>
         <li>FOR ARTISTS</li>
         <li>
-          <Link to="/creator-token-mint">BUY CREATOR TOKEN</Link>
+          <Link to="/spin-lounder/creator-token-mint">BUY CREATOR TOKEN</Link>
         </li>
       </ul>
     </nav>
