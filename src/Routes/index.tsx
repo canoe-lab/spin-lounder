@@ -1,5 +1,6 @@
 import { FC, Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
+import { CREATOR_TOKEN_MINT, HOME } from "./routes";
 //types
 interface ILazyComponentTypes {
   children: React.ReactElement;
@@ -10,11 +11,11 @@ const CreatorTokenMintPage = lazy(() => import("../pages/CreatorTokenMintPage"))
 
 const routes = [
   {
-    path: "/spin-lounder/",
+    path: HOME,
     Component: HomePage
   },
   {
-    path: "/spin-lounder/creator-token-mint",
+    path: CREATOR_TOKEN_MINT,
     Component: CreatorTokenMintPage
   }
 ];
