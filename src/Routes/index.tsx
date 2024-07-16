@@ -1,6 +1,5 @@
 import { FC, Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
-
 //types
 interface ILazyComponentTypes {
   children: React.ReactElement;
