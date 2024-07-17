@@ -1,7 +1,6 @@
-import { useConnect, useAccount, useDisconnect } from "wagmi";
-import { walletConnect } from "wagmi/connectors";
+import { useAccount, useDisconnect } from "wagmi";
+import { useWeb3Modal } from "@web3modal/wagmi/react";
 
-import { projectId } from "../../../../constants";
 import Button from "../../../../components/Buttons/BasicButton";
 import { shortenWalletAddress } from "../../../../utils/walletAddress";
 
@@ -9,7 +8,7 @@ import { shortenWalletAddress } from "../../../../utils/walletAddress";
 import * as S from "../../../styles";
 
 const HeaderButtonContainer = () => {
-  const { connect } = useConnect();
+  const { open } = useWeb3Modal();
   const { disconnect } = useDisconnect();
 
   const { address, isConnected } = useAccount();
@@ -19,7 +18,7 @@ const HeaderButtonContainer = () => {
       disconnect();
       return;
     }
-    connect({ connector: walletConnect({ projectId }) });
+    open();
   };
   return (
     <S.HeaderButtonContainer>
